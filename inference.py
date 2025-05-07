@@ -73,10 +73,10 @@ def main(
         
         # 중간 중간에 결과물을 저장
         with open(output_file, 'w') as f:
-            json.dump(result_dict, f, indent=4)
+            json.dump(result_dict, f, indent=4, ensure_ascii=False)
 
     with open(output_file, 'w') as f:
-        json.dump(result_dict, f, indent=4)
+        json.dump(result_dict, f, indent=4, ensure_ascii=False)
     print(f"Results saved to {output_file}")
     return 
 
